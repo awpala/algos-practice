@@ -1,4 +1,5 @@
-console.log('SECTION 1 - Arrays & Strings\n\n');
+console.log('SECTION 1 - Arrays & Strings');
+console.log('|------------------------------------------------|\n')
 
 console.log('Problem 1A - Merging Meeting Times\n');
 const { Meeting } = require('./01A-Meeting');
@@ -14,3 +15,10 @@ const { mergeRanges } = require('./01A-mergeRanges');
 const mergedRanges = mergeRanges(meetings);
 console.log();
 console.log('Merged Ranges:\n', mergedRanges);
+console.log();
+
+console.log('Problem 1B - Reverse String in Place\n');
+const { reverseInPlace } = require('./01B-reverseInPlace');
+let str = 'Hello World'.split('');
+reverseInPlace(str);
+console.log(`'Hello World' reversed is '${str.join('')}'`);
