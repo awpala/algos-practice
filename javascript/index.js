@@ -41,3 +41,25 @@ console.log();
 let mergedArray = mergeArrays(myArray, alicesArray);
 console.log(`merged orders: [ ${mergedArray.join(' ')} ]`);
 console.log();
+
+console.log('Problem 1E - Cafe Order Checker\n');
+const { isFirstComeFirstServed } = require('./01E-cafeOrderChecker');
+let takeOutOrders = [1, 3, 5];
+let dineInOrders = [2, 4, 6];
+let servedOrders = [1, 2, 4, 6, 5, 3]; 
+console.log(`take-out orders: [ ${takeOutOrders.join(' ')} ]`);
+console.log(`dine-in orders: [ ${dineInOrders.join(' ')} ]`);
+console.log(`served orders: [ ${servedOrders.join(' ')} ]`);
+console.log(`is first-come, first-served? ${isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders)}`);
+console.log();
+takeOutOrders = [17, 8, 24];
+dineInOrders = [12, 19, 2];
+servedOrders = [17, 8, 12, 19, 24, 2];
+console.log(`take-out orders: [ ${takeOutOrders.join(' ')} ]`);
+console.log(`dine-in orders: [ ${dineInOrders.join(' ')} ]`);
+console.log(`served orders: [ ${servedOrders.join(' ')} ]`);
+console.log(`is first-come, first-served? ${isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders)}`);
+console.log();
+
+console.log('\nSECTION 2 - Hashing & Hash Tables');
+console.log('|------------------------------------------------|\n')

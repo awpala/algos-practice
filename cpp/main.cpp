@@ -8,6 +8,7 @@
 #include "01B-reverseInPlace.cpp"
 #include "01C-reverseWords.cpp"
 #include "01D-mergeSortedArrays.cpp"
+#include "01E-cafeOrderChecker.cpp"
 
 using namespace std;
 
@@ -43,8 +44,8 @@ int main()
     cout << endl;
 
     cout << "Problem 1D - Merge Sorted Arrays\n" << endl;
-    const vector<int> myVector{ 3, 4, 6, 10, 11, 15 };
-    const vector<int> alicesVector{ 1, 5, 8, 12, 14, 19 };
+    vector<int> myVector{ 3, 4, 6, 10, 11, 15 };
+    vector<int> alicesVector{ 1, 5, 8, 12, 14, 19 };
     cout << "my orders: [";
     for (auto order : myVector) {
         cout << " " << order;
@@ -63,4 +64,50 @@ int main()
     }
     cout << " ]" << endl;
     cout << endl;
+
+    cout << "Problem 1E - Cafe Order Checker\n" << endl;
+    vector<int> take_out_orders { 1, 3, 5 };
+    vector<int> dine_in_orders { 2, 4, 6 };
+    vector<int> served_orders { 1, 2, 4, 6, 5, 3 };
+    cout << "take-out orders: [";
+    for (auto order : take_out_orders) {
+        cout << " " << order;
+    }
+    cout << " ]" << endl;
+    cout << "dine-in orders: [";
+    for (auto order : dine_in_orders) {
+        cout << " " << order;
+    }
+    cout << " ]" << endl;
+    cout << "served orders: [";
+    for (auto order : served_orders) {
+        cout << " " << order;
+    }
+    cout << " ]" << endl;
+    cout << "is first-come, first-served? " << (isFirstComeFirstServed(take_out_orders, dine_in_orders, served_orders) ? "true" : "false") << endl;
+    cout << endl;
+    vector<int> t_orders { 17, 8, 24 };
+    vector<int> d_orders { 12, 19, 2 };
+    vector<int> s_orders { 17, 8, 12, 19, 24, 2 };
+    cout << "take-out orders: [";
+    for (auto order : t_orders) {
+        cout << " " << order;
+    }
+    cout << " ]" << endl;
+    cout << "dine-in orders: [";
+    for (auto order : d_orders) {
+        cout << " " << order;
+    }
+    cout << " ]" << endl;
+    cout << "served orders: [";
+    for (auto order : s_orders) {
+        cout << " " << order;
+    }
+    cout << " ]" << endl;
+    cout << "is first-come, first-served? " << (isFirstComeFirstServed(t_orders, d_orders, s_orders) ? "true" : "false") << endl;
+    cout << endl;
+
+    cout << "\nSECTION 2 - Hashing & Hash Tables" << endl;
+    cout << "|------------------------------------------------|\n" << endl;
+
 }
