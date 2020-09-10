@@ -6,6 +6,7 @@
 #include "01A-Meeting.h"
 #include "01A-mergeRanges.cpp"
 #include "01B-reverseInPlace.cpp"
+#include "01C-reverseWords.cpp"
 
 using namespace std;
 
@@ -32,6 +33,12 @@ int main()
     string str { "Hello World" };
     reverseInPlace(str);
     cout << "'Hello World' reversed is '" << str << "'\n";
+    cout << endl;
+
+    cout << "Problem 1C - Reverse Words\n" << endl;
+    string message = "cake pound steal";
+    reverseWords(message);
+    cout << "'cake pound steal' reversed is '" << message << "'\n";
     cout << endl;
 
 }
