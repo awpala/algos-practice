@@ -30,3 +30,14 @@ let message = 'cake pound steal'.split('');
 reverseWords(message);
 console.log(`'cake pound steal' reversed is '${message.join('')}'`);
 console.log();
+
+console.log('Problem 1D - Merge Sorted Arrays\n');
+const { mergeArrays } = require('./01D-mergeSortedArrays');
+let myArray = [3, 4, 6, 10, 11, 15];
+let alicesArray = [1, 5, 8, 12, 14, 19];
+console.log(`my orders: [ ${myArray.join(' ')} ]`);
+console.log(`Alice's orders: [ ${alicesArray.join(' ')} ]`);
+console.log();
+let mergedArray = mergeArrays(myArray, alicesArray);
+console.log(`merged orders: [ ${mergedArray.join(' ')} ]`);
+console.log();
