@@ -123,6 +123,6 @@ int main()
     }
     cout << " ]" << endl;
     cout << "total flight time (mins): " << flight_length << endl;
-    cout << "can watch two movies during flight: " << (canTwoMoviesFillFlight(movie_lengths, flight_length) ? "true" : "false") << endl;
+    cout << "can watch two movies back-to-back taking up the exact total flight time: " << (canTwoMoviesFillFlight(movie_lengths, flight_length) ? "true" : "false") << endl;
 
 }

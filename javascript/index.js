@@ -71,5 +71,5 @@ let movieLengths = [90, 120, 180, 88, 60, 45, 140];
 let flightLength = 240;
 console.log(`movie selections (mins): [ ${movieLengths.join(' ')} ]`);
 console.log(`total flight time (mins): ${flightLength}`);
-console.log(`can watch two movies during flight: ${canTwoMoviesFillFlight(movieLengths, flightLength)}`);
+console.log(`can watch two movies back-to-back taking up the exact total flight time: ${canTwoMoviesFillFlight(movieLengths, flightLength)}`);
 console.log();
