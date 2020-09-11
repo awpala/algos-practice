@@ -10,6 +10,9 @@
 #include "01D-mergeSortedArrays.cpp"
 #include "01E-cafeOrderChecker.cpp"
 
+// Section 2 - Hashing & Hash Tables
+#include "02A-inflightEntertainment.cpp"
+
 using namespace std;
 
 int main()
@@ -107,7 +110,19 @@ int main()
     cout << "is first-come, first-served? " << (isFirstComeFirstServed(t_orders, d_orders, s_orders) ? "true" : "false") << endl;
     cout << endl;
 
+
     cout << "\nSECTION 2 - Hashing & Hash Tables" << endl;
     cout << "|------------------------------------------------|\n" << endl;
+
+    cout << "Problem 2A - Inflight Entertainment\n" << endl;
+    vector<int> movie_lengths { 90, 120, 180, 88, 60, 45, 140 };
+    int flight_length { 240 };
+    cout << "movie selections (mins): [";
+    for (auto length : movie_lengths) {
+        cout << " " << length;
+    }
+    cout << " ]" << endl;
+    cout << "total flight time (mins): " << flight_length << endl;
+    cout << "can watch two movies during flight: " << (canTwoMoviesFillFlight(movie_lengths, flight_length) ? "true" : "false") << endl;
 
 }

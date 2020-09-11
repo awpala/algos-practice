@@ -61,5 +61,15 @@ console.log(`served orders: [ ${servedOrders.join(' ')} ]`);
 console.log(`is first-come, first-served? ${isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders)}`);
 console.log();
 
+
 console.log('\nSECTION 2 - Hashing & Hash Tables');
 console.log('|------------------------------------------------|\n')
+
+console.log('Problem 2A - Inflight Entertainment\n');
+const { canTwoMoviesFillFlight } = require('./02A-inflightEntertainment');
+let movieLengths = [90, 120, 180, 88, 60, 45, 140];
+let flightLength = 240;
+console.log(`movie selections (mins): [ ${movieLengths.join(' ')} ]`);
+console.log(`total flight time (mins): ${flightLength}`);
+console.log(`can watch two movies during flight: ${canTwoMoviesFillFlight(movieLengths, flightLength)}`);
+console.log();
